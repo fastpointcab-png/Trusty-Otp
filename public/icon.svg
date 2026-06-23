@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="#0f172a" />
+  
+  <!-- Subtle Grid/Pattern -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#334155" stroke-width="4" stroke-dasharray="12 12" opacity="0.4" />
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#334155" stroke-width="2" opacity="0.3" />
+
+  <!-- Shield/Security Outline with Glowing Yellow Gradient Accent -->
+  <path d="M256 64 C350 64 384 96 384 96 V234 C384 320 316 392 256 432 C196 392 128 320 128 234 V96 C128 96 162 64 256 64 Z" 
+        fill="none" stroke="#eab308" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Shield Fill (Semi-transparent Slate) -->
+  <path d="M256 80 C338 80 368 110 368 110 V234 C368 310 308 376 256 414 C204 376 144 310 144 234 V110 C144 110 174 80 256 80 Z" 
+        fill="#1e293b" opacity="0.85" />
+
+  <!-- Taxi Graphic (Minimalist Silhouette inside Shield) -->
+  <g transform="translate(166, 170) scale(1.1)">
+    <!-- Taxi Roof -->
+    <path d="M45 40 L55 20 H95 L105 40 Z" fill="#eab308" />
+    
+    <!-- Taxi Sign -->
+    <rect x="68" y="8" width="14" height="12" rx="2" fill="#0f172a" stroke="#eab308" stroke-width="2" />
+    <text x="75" y="17" font-family="'Inter', sans-serif" font-size="8" font-weight="900" fill="#eab308" text-anchor="middle">TAXI</text>
+
+    <!-- Windshield -->
+    <path d="M47 38 L55 24 H95 L103 38 Z" fill="#0f172a" />
+
+    <!-- Taxi Body -->
+    <path d="M15 40 H135 L140 68 C140 72 136 76 132 76 H18 C14 76 10 72 10 68 Z" fill="#eab308" />
+    
+    <!-- Grille & Headlights -->
+    <rect x="20" y="50" width="16" height="10" rx="4" fill="#ffffff" />
+    <rect x="114" y="50" width="16" height="10" rx="4" fill="#ffffff" />
+    <rect x="44" y="52" width="62" height="6" rx="2" fill="#0f172a" />
+    
+    <!-- Wheels/Base Shadow -->
+    <rect x="22" y="76" width="22" height="8" rx="3" fill="#334155" />
+    <rect x="106" y="76" width="22" height="8" rx="3" fill="#334155" />
+  </g>
+
+  <!-- Keyhole/OTP Lock Accent in center of taxi -->
+  <circle cx="256" cy="300" r="14" fill="#0f172a" />
+  <path d="M251 310 L246 335 H266 L261 310 Z" fill="#0f172a" />
+
+  <!-- Star Embellishments representing speed/success -->
+  <path d="M160 120 L163 128 L171 129 L165 135 L167 143 L160 138 L153 143 L155 135 L149 129 L157 128 Z" fill="#eab308" />
+  <path d="M352 120 L355 128 L363 129 L357 135 L359 143 L352 138 L345 143 L347 135 L341 129 L349 128 Z" fill="#i" opacity="0.5" />
+  <path d="M352 120 L355 128 L363 129 L357 135 L359 143 L352 138 L345 143 L347 135 L341 129 L349 128 Z" fill="#eab308" />
+</svg>

@@ -1,0 +1,29 @@
+{
+  "name": "TRUSTY-OTP",
+  "short_name": "SMS OTP",
+  "description": "Generate secure timezone-aware dynamic OTPs from your mobile number and open the default SMS app.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#eab308",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/images/TRUSTY OTP LOGO.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/TRUSTY OTP LOGO.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/TRUSTY OTP LOGO.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

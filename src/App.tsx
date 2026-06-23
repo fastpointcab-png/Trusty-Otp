@@ -16,7 +16,8 @@ import {
   ShieldCheck, 
   Compass,
   Copy,
-  MessageSquare
+  MessageSquare,
+  X
 } from "lucide-react";
 
 // Types
@@ -297,10 +298,20 @@ export default function App() {
                 value={mobileNumber}
                 onChange={(e) => setMobileNumber(e.target.value)}
                 placeholder=""
-                className="w-full bg-slate-50/80 border border-slate-200/60 rounded-2xl px-5 py-4.5 pr-12 text-xl font-mono tracking-widest focus:outline-none focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 text-slate-900 transition-all font-bold shadow-xs"
+                className="w-full bg-slate-50/80 border border-slate-200/60 rounded-2xl px-5 py-4.5 pr-20 text-lg font-mono tracking-normal focus:outline-none focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 text-slate-900 transition-all font-bold shadow-xs"
                 autoComplete="off"
               />
               <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center space-x-2">
+                {mobileNumber && (
+                  <button
+                    type="button"
+                    onClick={() => setMobileNumber("")}
+                    className="p-1.5 text-slate-400 hover:text-slate-600 hover:bg-slate-200/60 rounded-full transition-colors cursor-pointer"
+                    title="Clear input"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                )}
                 {digits.length >= 10 ? (
                   <CheckCircle className="w-5 h-5 text-emerald-500 fill-emerald-50" />
                 ) : digits.length > 0 ? (
@@ -479,6 +490,10 @@ export default function App() {
 
                   {hasMinFourDigits ? (
                     <div className="space-y-2.5 text-slate-600">
+                      <div className="flex justify-between text-[11px]">
+                        <span>Full Mobile Number:</span>
+                        <span className="text-slate-800 font-bold select-all">{digits}</span>
+                      </div>
                       <div className="flex justify-between text-[11px]">
                         <span>Last 4 Digits selected:</span>
                         <span className="text-slate-800 font-bold">{lastFour}</span>
